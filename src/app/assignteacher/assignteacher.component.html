@@ -1,0 +1,50 @@
+<section class="container pt-3">
+    <div class="bg-light p-5 overflow-auto">
+        <h5 class="text-primary">Assign Teacher</h5>
+        <div>
+
+            <table class="table table-striped table-bordered table-sm row-border hover bg-white" datatable
+                [dtOptions]="dtOptions">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Subject</th>
+                        <th>Class Assign</th>
+                        <th>Section</th>
+                        <th>Role</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let group of dataa">
+                        <td>{{group.no}}</td>
+                        <td>{{group.fname}}</td>
+                        <td>{{group.lname}}</td>
+                        <td>{{group.subject}}</td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Classes List</option>
+                                <option value="1">12</option>
+                                <option value="2">11</option>
+                                <option value="3">10</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>Selection List</option>
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">C</option>
+                            </select></td>
+                        <td><select class="form-select" aria-label="Default select example">
+                                <option selected>select Role</option>
+                                <option value="1">Class Teacher</option>
+                                <option value="2">Subject Teacher</option>
+                            </select></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end pt-5">
+            <button class="btn btn-primary me-md-2" type="button">Button</button>
+        </div>
+    </div>
+</section>

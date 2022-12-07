@@ -1,0 +1,137 @@
+<div class="main-content pt-5" >
+    <div class="container">
+        <div class="card shadow border-0 p-5">
+            <div class="header">
+                <h4 class="title">Add Principal</h4>
+            </div>
+            <div class="content">
+                <form #usersForm="ngForm" (ngSubmit)="getUserFormData(usersForm.value)">
+                    <div class="row">
+                    
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>First Name <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="text" ngModel name="firstname" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Last Name <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="text" ngModel name="lastname" class="form-control" id="exampleFormControlInput1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Mobile Number <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="number" ngModel name="mobilenumber" class="form-control" id="exampleFormControlInput1" placeholder="+91 85456958547">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Email Id <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="email" ngModel name="email" id="exampleFormControlInput1" placeholder="example@gnail.com">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row pt-3">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Gender <span class="text-danger">*</span></h6>
+                                  </label><br>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">Others</label>
+                                  </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="row pt-3">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Address 1 <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="text" ngModel name="address1" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Address 2 <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="text" ngModel name="address2" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Aadhar Number <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="number" ngModel name="aadhar" class="form-control" id="exampleFormControlInput1" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row pt-3">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Pan Number<span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Email <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+91 1234567890">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleFormControlInput1" class="form-label">
+                                    <h6>Password <span class="text-danger">*</span></h6>
+                                  </label>
+                                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="row pt-4">
+                        <div class="col text-end">
+                            <button type="button" class="btn btn-secondary me-md-2" data-bs-dismiss="modal" routerLink="/principallist">Close</button>
+                            <button type="submit" class="btn btn-info btn-fill pull-right">Save</button>
+                        </div>
+
+                    </div>
+                    
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+   

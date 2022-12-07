@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+.animated {
+    animation: animateBg 14s linear infinite;
+    background-image: linear-gradient(0deg, #AC6502, #C05702, #D08B5D, #AC6502, #C05702);
+    background-size: 100% 400%;
+    height: 980px;
+}
+@keyframes animateBg {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
